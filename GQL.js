@@ -1,11 +1,4 @@
 
-/*
-HOM NAY, TOI QUYET DINH DAT TEN CHO NO LA JGL (JAVASCRIPT GML LANGUAGE...)
-S = SELECT, D = (DISTINCT,DELETE), U = UPDATE , O = ORDER, W = WHERE.. FC : function callback , J : JOIN, T : TABLE
-    - moi method cua JGL deu viet thuong, tren nguyen tac sieu ngan
-    - fck
-*/
-
 
 // lay huyen trong tinh
 
@@ -42,18 +35,21 @@ var GQL=(function(){
     me.ji2wo = function(){ // join inner 2t
         
     }
-    me.swo = function(){
-        
-    }
-    me.sdwo_fts= function(){
-
-    }
-    me.swo_fts = function(){
-
-    }
+    
     me.ftswo(tb,col,w,o, function(){
         
     })
+    // ranking = {group:"",order:""}
+    me.swo_paging=function(cols, ranking, from, to){
+        
+    }
+    
+    // cái chính là định nghĩa lấy bảng hoàn chỉnh, cho vào nhiều node thì sao?
+    
+    me.enhance = function(syntax){
+        // syntax = [{key:"dulich",tb:"dulich.diemdulich","w":"","o":""}, {key:"dulich",tb:"dulich.diemlehoi","w":"","o":""}]
+    }
+    
     
     return me;
 })();
